@@ -1,6 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
+  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
 }
 main {
   display: flex;
@@ -15,4 +16,43 @@ article {
 
 aside {
   flex: 1;
+}
+
+header {
+  background: #222;
+  border-bottom: 3px solid #0091f8;
+}
+
+header h1 {
+  color: white;
+}
+
+header li.logo {
+  color: #0091f8;
+  font-size: 40px;
+}
+
+article {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  background: #f1f1f1;
+  padding: 30px;
+  border-left: 3px solid #0091f8;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+}
+
+footer a {
+  color: #0091f8;
+  font-weight: bold;
 }
