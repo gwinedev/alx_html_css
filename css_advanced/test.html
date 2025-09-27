@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Padding vs Margin Demo</title>
+    <style>
+      /* start with the safe reset you used */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+
+      /* two demo boxes */
+      .box {
+        width: 240px;
+        border: 3px solid #333;
+        background: #f3f3f3;
+        margin: 16px; /* space *outside* the box */
+      }
+
+      /* change this to padding:20px to experiment (or both) */
+      .box.padding {
+        padding: 20px;
+      } /* space *inside* the box */
+      .box.margin-only {
+        margin: 20px;
+      } /* space *outside* the box */
+    </style>
+  </head>
+  <body>
+    <div class="box padding">
+      This box has <strong>padding:20px</strong>. Space inside the border.
+    </div>
+    <div class="box margin-only">
+      This box has <strong>margin:20px</strong>. Space outside the border.
+    </div>
+  </body>
+</html>
